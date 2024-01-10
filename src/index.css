@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ff9c6b4c;
+  color: #590140;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  background-color: #590140;
+  margin-left: 0;
+  color: #fff;
+  opacity: 90%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  margin-top: 0;
+}
+
+nav li {
+  /* border: 2px solid yellow; */
+  margin: auto;
+  width: 80%;
+  padding: 2% 0;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  /* border: 2px solid green; */
+}
+
+.menu {
+  /* border: 2px solid green; */
+  padding: 0;
+  width: 3rem;
+  margin-left: 10px;
+  color: #590140;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 1.75rem;
+  color: #590140;
+  filter: brightness(0) invert(1);
+}
+
+#home {
+  padding: 5%;
+}
+
+#bigday {
+  background-color: #ff9c6b4c;
+  padding: 5%;
+}
+
+#gifts {
+  padding: 5%;
+}
+
+.logos {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  text-align: start;
+  margin: auto;
+}
+
+.momo {
+  width: 80%;
+  height: auto;
+  border-radius: 30%;
+}
+
+.pay-deets {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  border-radius: 10%;
+  padding: 2%;
+}
+
+.skhome {
+  max-width: 90%;
+  margin-top: 19%;
+  max-height: 75vh;
+}
+
+.network {
+  font-weight: 700;
+}
+.pay-methods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.pay-methods a {
+  color: #590140;
+}
+
+.paym {
+  margin: auto;
+  width: 80%;
+  border-radius: 30%;
+}
+
+.paym:hover {
+  scale: 1.2;
+  transition-duration: 0.5s;
+}
