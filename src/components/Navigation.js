@@ -1,8 +1,23 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { motion } from "framer-motion";
 import menu from '../assets/images/Icon - Menu.png'
 import close from '../assets/images/close.png'
 import { Link } from 'react-scroll';
 
+const navVariants ={
+  hidden: {
+    y: "-100",
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      staggeredChildren: 1,
+    },
+  },
+}
 const Navigation = () => {
   const [open, setOpen] = useState(false);
 
@@ -15,9 +30,9 @@ const Navigation = () => {
       {open && (<div>
         <img src={close} className="close" alt="close" onClick={() => setOpen(!open)} />
         <ul>
-          <li><Link to="home" smooth duration={500}>Home</Link></li>
-          <li><Link to="bigday" smooth duration={500}>The Big Day</Link></li>
-          <li><Link to="gifts" smooth duration={500}>Gifts</Link></li>
+          <motion.li variants={navVariants} initial="hidden" animate="visible"><Link to="home" smooth duration={500}>Home</Link></motion.li>
+          <motion.li variants={navVariants} initial="hidden" animate="visible"><Link to="bigday" smooth duration={500}>The Big Day</Link></motion.li>
+          <motion.li variants={navVariants} initial="hidden" animate="visible"><Link to="gifts" smooth duration={500}>Gifts</Link></motion.li>
         </ul>
       </div>)}
     </nav>
