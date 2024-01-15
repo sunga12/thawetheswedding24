@@ -101,6 +101,10 @@ nav li {
   padding: 5%;
 }
 
+.skbigday {
+  display: none;
+}
+
 .bold-text {
   font-weight: 700;
 }
@@ -202,4 +206,19 @@ button:hover {
   border: 2px solid #fb9c0d;
   transition-duration: 0.5s;
 }
+
+.skbigday {
+  display: unset;
+  border-radius: 10%;
+  width: 90%;
+  opacity: 60%;
+}
+
+.bigday-deets {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
 }
