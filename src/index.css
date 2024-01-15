@@ -219,6 +219,8 @@ button:hover {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  font-size: 1.3rem;
+  text-align: left;
 }
 
 

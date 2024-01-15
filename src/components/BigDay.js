@@ -22,7 +22,6 @@ const BigDay = () => {
       <div className="bigday-deets">
         <motion.p variants={dayVariants} initial="hidden" whileInView="visible" viewport={{ once: true }}>
           We can't wait to celebrate with everyone! Below are the details for our Marriage Ceremony & Reception!
-          <br />
           Come ready to dance and celebrate God's goodness!
           <br />
           <h4>Marriage Blessing:</h4>
