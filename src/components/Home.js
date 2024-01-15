@@ -1,15 +1,14 @@
 import React from 'react'
 import skhome from '../assets/images/SK/SK1.jpg'
-import gallery from  '../gallery';
 
 const Home = () => {
   return (
     <div id="home">
-      <div>
+      <div className="img-div">
           <img className="skhome" src={skhome} alt="sk" />
       </div>
       <h1>Sunga & Karis</h1>
-      <p>Hey Friends & Family
+      <p className="home-msg">Hey Friends & Family
         <br />
         <br />
         Welcome to our Wedding Website! Here you can find all the details for our Special day.
