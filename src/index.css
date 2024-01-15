@@ -166,8 +166,40 @@ nav li {
 
 @media only screen and (min-width: 768px) {
 
-.img-div {
-  margin-top: 3rem;
+#home {
+  margin: 3rem auto;
+  width: 95%;
+  display: flex;
+  align-items: center;
 }
 
+.img-div {
+  margin: 0;
+}
+
+.skhome {
+  border-radius: 10%;
+}
+
+.home-heading {
+  display: none;
+}
+
+button {
+  color: #fb9c0d;
+  background-color: #fff;
+  border: 2px solid #ff9900;
+  font-weight: 600;
+  padding: 5%;
+  margin: 0 1rem 1rem;
+  border-radius: 50px;
+}
+
+button:hover {
+  scale: 1.2;
+  background-color: #ff9900;
+  color: #fff;
+  border: 2px solid #fb9c0d;
+  transition-duration: 0.5s;
+}
 }

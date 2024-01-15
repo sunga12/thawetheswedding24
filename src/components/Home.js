@@ -7,8 +7,9 @@ const Home = () => {
       <div className="img-div">
           <img className="skhome" src={skhome} alt="sk" />
       </div>
-      <h1>Sunga & Karis</h1>
-      <p className="home-msg">Hey Friends & Family
+      <p className="home-msg">
+        <h1 className="home-heading">Sunga & Karis</h1>
+        Hey Friends & Family
         <br />
         <br />
         Welcome to our Wedding Website! Here you can find all the details for our Special day.
@@ -19,6 +20,14 @@ const Home = () => {
         <br />
         We want to thank you all for your love and support. We are so excited to share this special day with our favorite people!
         <br />
+        <br />
+
+        <button>
+          Give a Gift
+        </button>
+        <button>
+          Our Wedding Day
+        </button>
         <br />
         With love,
         <br />
