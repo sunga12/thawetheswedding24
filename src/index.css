@@ -37,6 +37,10 @@ p {
   margin-top: 0;
 }
 
+button {
+  display: none;
+}
+
 nav li {
   /* border: 2px solid yellow; */
   margin: auto;
@@ -67,10 +71,6 @@ nav li {
   width: 1.25rem;
   color: #590140;
   filter: brightness(0) invert(1);
-}
-
-#home {
-  /* padding: 0 0 5%; */
 }
 
 .img-div {
@@ -170,8 +170,11 @@ nav li {
 
 @media only screen and (min-width: 768px) {
 
+button {
+  display: unset;
+}
 #home {
-  margin: 3rem auto;
+  margin: 4rem auto;
   width: 95%;
   display: flex;
   align-items: center;
@@ -223,5 +226,22 @@ button:hover {
   text-align: left;
 }
 
+.gift-deets {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ff9900;
+  background-color: peachpuff;
+  padding: 3%;
+  border-radius: 50px;
+}
 
+.int-msg {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.paym {
+  width: 60%;
+}
 }

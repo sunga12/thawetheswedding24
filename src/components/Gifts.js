@@ -42,45 +42,48 @@ const Gifts = () => {
         <br />
         <br />
 
-        <motion.div variants={giftVariants} initial="hidden" whileInView="visible" className="logos">
-          <div className="pay-deets">
-            <img src={airtel} className="momo" alt="airtel money logo" />
+    <div className="gift-deets">
+      <motion.div variants={giftVariants} initial="hidden" whileInView="visible" className="logos">
+            <div className="pay-deets">
+              <img src={airtel} className="momo" alt="airtel money logo" />
+              <p>
+              <span className="network">Airtel Money:</span>
+                <br />
+                <br />
+                Name: Sungabanja Thawethe
+                <br />
+                Number: +260975147761
+              </p>
+            </div>
+            <div className="pay-deets">
+            <img src={mtn} className="momo" alt="mtn money logo" />
             <p>
-            <span className="network">Airtel Money:</span>
-              <br />
-              <br />
-              Name: Sungabanja Thawethe
-              <br />
-              Number: +260975147761
-            </p>
-          </div>
-          <div className="pay-deets">
-          <img src={mtn} className="momo" alt="mtn money logo" />
-          <p>
-          <span className="network">MTN Money:</span>
-              <br />
-              <br />
-              Name: Sungabanja Thawethe
-              <br />
-              Number: +260964311916
-            </p>
-          </div>
-          <div className="pay-deets">
-          <img src={fnb} className="momo" alt="mtn money logo" />
-          <p>
-          <span className="network">First National Bank:</span>
-              <br />
-              <br />
-              Name: Sungabanja Thawethe
-              <br />
-              Account: 627918104579
-            </p>
-          </div>
-        </motion.div>
-        <br />
+            <span className="network">MTN Money:</span>
+                <br />
+                <br />
+                Name: Sungabanja Thawethe
+                <br />
+                Number: +260964311916
+              </p>
+            </div>
+            <div className="pay-deets">
+            <img src={fnb} className="momo" alt="mtn money logo" />
+            <p>
+            <span className="network">First National Bank:</span>
+                <br />
+                <br />
+                Name: Sungabanja Thawethe
+                <br />
+                Account: 627918104579
+              </p>
+            </div>
+      </motion.div>
+      <div className="int-deets">
+        <p className="int-msg">
         International Transfers can be made to any 
         of the above numbers through any of the 
         following Platforms:
+        </p>
 
         <div className="pay-methods">
           <a href="https://www.remitly.com/us/en/landing/fbslp?g_acctid=246-442-0064&g_campaign=GBR-Global_Acquisition_Core_Brand&g_campaignid=771204655&g_adgroupid=40173954843&g_adid=485819711454&g_keyword=remitly&g_keywordid=aud-325067424685%3Akwd-60364513998&g_network=g&utm_source=google&utm_medium=Direct&utm_term=GBR-Global_Global_Acquisition_Direct_Brand_Brand&utm_content=undefined&utm_campaign=GBR-Global_Acquisition_Core_Brand&kpid=485819711454&gad_source=1&gclid=CjwKCAiA7t6sBhAiEiwAsaieYjsyC6MafLQs6QRySGJ1WQ5-XDQ8wnKs4FzAIx-srhn2-EqbRlDrKhoCMnEQAvD_BwE"
@@ -99,6 +102,8 @@ const Gifts = () => {
             <img src={paypal} className="paym" alt="mtn money logo" />
           </a>
         </div>
+      </div>
+    </div>
 
         <br />
         <br />
