@@ -182,6 +182,10 @@ body {
   font-size: 1.1rem;
 }
 
+button:hover a {
+  color: #fff;
+}
+
 #home {
   margin: 4rem auto;
   width: 90%;
@@ -246,6 +250,7 @@ button:hover {
 }
 
 .paym {
-  width: 60%;
+  min-width: 60%;
+  width: 70%;
 }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import skhome from '../assets/images/SK/SK1.jpg'
+import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
@@ -22,12 +23,16 @@ const Home = () => {
         <br />
         <br />
 
-        <button>
-          Give a Gift
-        </button>
-        <button>
-          Our Wedding Day
-        </button>
+        <Link to="gifts" smooth duration={500}>
+          <button>
+            Give a Gift
+          </button>
+        </Link>
+        <Link to="bigday" smooth duration={500}>
+          <button>
+            Our Wedding Day
+          </button>
+        </Link>
         <br />
         With love,
         <br />
