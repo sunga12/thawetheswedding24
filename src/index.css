@@ -210,14 +210,15 @@ button:hover {
 .skbigday {
   display: unset;
   border-radius: 10%;
-  width: 90%;
+  height: 80vh;
   opacity: 60%;
 }
 
 .bigday-deets {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  gap: 2rem;
 }
 
 
