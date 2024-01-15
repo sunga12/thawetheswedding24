@@ -58,13 +58,13 @@ const Gifts = () => {
             <div className="pay-deets">
             <img src={mtn} className="momo" alt="mtn money logo" />
             <p>
-            <span className="network">MTN Money:</span>
+              <span className="network">MTN Money:</span>
                 <br />
                 <br />
                 Name: Sungabanja Thawethe
                 <br />
                 Number: +260964311916
-              </p>
+            </p>
             </div>
             <div className="pay-deets">
             <img src={fnb} className="momo" alt="mtn money logo" />
