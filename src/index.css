@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ff9c6b4c;
-  color: #590140;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
 }
 
 code {
@@ -16,10 +16,11 @@ code {
 
 nav {
   position: fixed;
+  top: 0;
   width: 100vw;
-  background-color: #590140;
+  background-color: #fb9c0d;
   margin-left: 0;
-  color: #fff;
+  color: #ffffff;
   opacity: 90%;
 }
 
@@ -29,7 +30,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
 
 p {
@@ -53,31 +54,59 @@ nav li {
 .menu {
   /* border: 2px solid green; */
   padding: 0;
-  width: 3rem;
+  width: 2.5rem;
   margin-left: 10px;
   color: #590140;
+  filter: brightness(0) invert(1);
 }
 
 .close {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 1.75rem;
+  width: 1.25rem;
   color: #590140;
   filter: brightness(0) invert(1);
 }
 
 #home {
-  padding: 5%;
+  /* padding: 0 0 5%; */
+}
+
+.img-div {
+  margin-top: 4rem;
+  padding: 1rem;
+}
+
+.skhome {
+  /* max-width: 90%; */
+  width: 100%;
+  /* max-height: 75vh; */
+}
+
+.home-msg {
+  width: 90%;
+  margin: 5% auto;
 }
 
 #bigday {
-  background-color: #ff9c6b4c;
+  color: #fff;
+  background-color: #ffb03ae5;
+  background-image: url('../src/assets/images/rings-gray.png');
+  background-position-x: 0%;
+  background-position-y: bottom;
+  background-size: 310%;
+  background-repeat: no-repeat;
+  background-blend-mode:overlay;
   padding: 5%;
 }
 
+.bold-text {
+  font-weight: 700;
+}
+
 #gifts {
-  padding: 5%;
+  padding: 0% 5%;
 }
 
 .logos {
@@ -95,6 +124,7 @@ nav li {
   width: 80%;
   height: auto;
   border-radius: 30%;
+  border: 1px solid black;
 }
 
 .pay-deets {
@@ -105,12 +135,6 @@ nav li {
   width: 40%;
   border-radius: 10%;
   padding: 2%;
-}
-
-.skhome {
-  max-width: 90%;
-  margin-top: 19%;
-  max-height: 75vh;
 }
 
 .network {
@@ -132,9 +156,18 @@ nav li {
   margin: auto;
   width: 80%;
   border-radius: 30%;
+  border: 1px solid black;
 }
 
 .paym:hover {
   scale: 1.2;
   transition-duration: 0.5s;
+}
+
+@media only screen and (min-width: 768px) {
+
+.img-div {
+  margin-top: 3rem;
+}
+
 }
