@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 import airtel from '../assets/images/airtelmomo.png';
 import mtn from '../assets/images/momozmw.png';
 import fnb from '../assets/images/fnb.png';
@@ -7,15 +8,31 @@ import world from '../assets/images/world.png';
 import taptap from '../assets/images/taptap.png';
 import paypal from '../assets/images/paypal.png';
 
+const giftVariants = {
+  hidden: {
+    opacity: 0
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 3,
+      duration: 2,
+    },
+  },
+};
+
 const Gifts = () => {
   return (
     <div id="gifts">
-      <h1 className="section-top">Gifts</h1>
-      <p>Dear Friends and Family,
+      <motion.h1 variants={giftVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="section-top">Gifts</motion.h1>
+      <motion.p variants={giftVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} >
+        Dear Friends and Family,
+        <br />
         <br />
         If you would like to contribute to our special day,
         we have created a honeymoon fund instead of accepting traditional 
         gifts.
+        <br />
         <br />
         Your generosity will help us create unforgettable memories 
         and start our lives together on an incredible adventure.
@@ -25,7 +42,7 @@ const Gifts = () => {
         <br />
         <br />
 
-        <div className="logos">
+        <motion.div variants={giftVariants} initial="hidden" whileInView="visible" className="logos">
           <div className="pay-deets">
             <img src={airtel} className="momo" alt="airtel money logo" />
             <p>
@@ -59,7 +76,7 @@ const Gifts = () => {
               Account: 627918104579
             </p>
           </div>
-        </div>
+        </motion.div>
         <br />
         International Transfers can be made to any 
         of the above numbers through any of the 
@@ -92,8 +109,7 @@ const Gifts = () => {
 
         With love,
         <br />
-        Sunga & Karis</p>
-        <br />
+        Sunga & Karis</motion.p>
     </div>
   )
 }
