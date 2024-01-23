@@ -176,6 +176,31 @@ nav li {
   transition-duration: 0.5s;
 }
 
+#contact {
+  background-color: peachpuff;
+  padding: 2rem 0;
+}
+
+.form-list {
+  width: 60%;
+  margin: auto;
+  padding: 0;
+}
+
+.form-list ul {
+  margin: 0;
+  display: flex;
+}
+
+.form-list li input,
+.form-list li textarea {
+  width: 90%;
+  margin: 1rem auto;
+  border-radius: 10px;
+  padding: 3%;
+  border: 1px solid white;
+}  
+
 @media only screen and (min-width: 768px) {
 
 body {

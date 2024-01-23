@@ -4,6 +4,7 @@ import BigDay from './components/BigDay';
 import Gifts from './components/Gifts';
 import Home from './components/Home';
 import Navigation from './components/Navigation';
+import Contact from './components/Contact';
 
 function App() {
   useEffect(() => {
@@ -15,6 +16,7 @@ function App() {
       <Home />
       <BigDay />
       <Gifts />
+      <Contact />
     </div>
   );
 }
