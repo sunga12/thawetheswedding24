@@ -1,6 +1,21 @@
 import React from 'react'
-import skhome from '../assets/images/SK/SK1.jpg'
+import skhome from '../assets/images/SK/SK1.jpg';
+import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
+
+
+const buttonVariants = {
+  hover: {
+    scale: 1.05,
+    textShadow: '0px 0px 8px rgb(255,255,255)',
+    boxShadow: '0px 0px 8px rgb(255,255,255)',
+    transition: {
+      repeat: Infinity,
+      repeatType: 'mirror',
+      duration: 0.4,
+    },
+  },
+};
 
 const Home = () => {
   return (
@@ -24,14 +39,24 @@ const Home = () => {
         <br />
 
         <Link to="gifts" smooth duration={500}>
-          <button>
-            Give a Gift
-          </button>
+        <motion.button
+            variants={buttonVariants}
+            whileHover="hover"
+            className="form-submit"
+            type="submit"
+          >
+            Give A Gift
+          </motion.button>
         </Link>
         <Link to="bigday" smooth duration={500}>
-          <button>
+        <motion.button
+            variants={buttonVariants}
+            whileHover="hover"
+            className="form-submit"
+            type="submit"
+          >
             Our Wedding Day
-          </button>
+          </motion.button>
         </Link>
         <br />
         With love,
