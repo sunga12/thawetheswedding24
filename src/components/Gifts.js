@@ -76,7 +76,7 @@ const Gifts = () => {
     <div className="gift-deets">
       <motion.div variants={giftVariants} initial="hidden" whileInView="visible" className="logos">
             <div className="pay-deets">
-              <img src={airtelImage} className="momo" onClick={handleAirtel} alt="airtel money logo" />
+              <img src={airtelImage} className="momo" onClick={handleAirtel} onMouseOver={handleAirtel} alt="airtel money logo" />
               <p>
               <span className="network">Airtel Money:</span>
                 <br />
@@ -87,7 +87,7 @@ const Gifts = () => {
               </p>
             </div>
             <div className="pay-deets">
-            <img src={mtnImage} className="momo" onClick={handleMtn} alt="mtn money logo" />
+            <img src={mtnImage} className="momo" onClick={handleMtn} onMouseOver={handleMtn} alt="mtn money logo" />
             <p>
               <span className="network">MTN Money:</span>
                 <br />
@@ -98,7 +98,7 @@ const Gifts = () => {
             </p>
             </div>
             <div className="pay-deets">
-            <img src={fnbImage} className="momo" onClick={handleFnb} alt="mtn money logo" />
+            <img src={fnbImage} className="momo" onClick={handleFnb} onMouseOver={handleFnb} alt="mtn money logo" />
             <p>
             <span className="network">First National Bank:</span>
                 <br />
