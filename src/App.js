@@ -8,8 +8,8 @@ import Contact from './components/Contact';
 
 function App() {
   useEffect(() => {
-    document.title = "The Thawethes 2024"
-  }, [])
+    document.title = 'The Thawethes 2024';
+  }, []);
   return (
     <div className="App">
       <Navigation />

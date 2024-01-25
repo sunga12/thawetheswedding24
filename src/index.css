@@ -2,17 +2,33 @@
 
 body {
   margin: 0;
-  font-family: 'Karla', 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family:
+    'Karla',
+    'Lato',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(255, 255, 255);
-  color: #000000;
+  color: #000;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
     monospace;
 }
 
@@ -22,7 +38,7 @@ nav {
   width: 100vw;
   background-color: #fb9c0d;
   margin-left: 0;
-  color: #ffffff;
+  color: #fff;
   opacity: 90%;
 }
 
@@ -32,7 +48,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 p {
@@ -42,7 +58,7 @@ p {
 button {
   color: #fb9c0d;
   background-color: #fff;
-  border: 2px solid #ff9900;
+  border: 2px solid #f90;
   font-weight: 600;
   padding: 5%;
   margin: 0 1rem 1rem;
@@ -60,6 +76,7 @@ nav li {
   display: flex;
   justify-content: space-between;
   width: 55%;
+
   /* border: 2px solid green; */
 }
 
@@ -89,6 +106,7 @@ nav li {
 .skhome {
   /* max-width: 90%; */
   width: 100%;
+
   /* max-height: 75vh; */
 }
 
@@ -105,7 +123,7 @@ nav li {
   background-position-y: bottom;
   background-size: 310%;
   background-repeat: no-repeat;
-  background-blend-mode:overlay;
+  background-blend-mode: overlay;
   padding: 5%;
 }
 
@@ -152,6 +170,7 @@ nav li {
 .network {
   font-weight: 700;
 }
+
 .pay-methods {
   display: flex;
   justify-content: center;
@@ -204,84 +223,82 @@ nav li {
   border-radius: 10px;
   padding: 3%;
   border: 1px solid white;
-}  
+}
 
 @media only screen and (min-width: 1024px) {
+  body {
+    font-size: 1.1rem;
+  }
 
-body {
-  font-size: 1.1rem;
-}
+  button:hover a {
+    color: #fff;
+  }
 
-button:hover a {
-  color: #fff;
-}
+  #home {
+    margin: 4rem auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+  }
 
-#home {
-  margin: 4rem auto;
-  width: 90%;
-  display: flex;
-  align-items: center;
-}
+  .img-div {
+    margin: 0;
+  }
 
-.img-div {
-  margin: 0;
-}
+  .skhome {
+    border-radius: 10%;
+  }
 
-.skhome {
-  border-radius: 10%;
-}
+  .home-heading {
+    display: none;
+  }
 
-.home-heading {
-  display: none;
-}
+  button:hover {
+    scale: 1.2;
+    background-color: #f90;
+    color: #fff;
+    border: 2px solid #fb9c0d;
+    transition-duration: 0.5s;
+  }
 
-button:hover {
-  scale: 1.2;
-  background-color: #ff9900;
-  color: #fff;
-  border: 2px solid #fb9c0d;
-  transition-duration: 0.5s;
-}
+  .skbigday {
+    display: unset;
+    border-radius: 10%;
+    opacity: 50%;
+    max-width: 50vw;
+    max-height: 80vh;
+  }
 
-.skbigday {
-  display: unset;
-  border-radius: 10%;
-  opacity: 50%;
-  max-width: 50vw;
-  max-height: 80vh;
-}
+  .bigday-deets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.3rem;
+    text-align: left;
+  }
 
-.bigday-deets {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  font-size: 1.3rem;
-  text-align: left;
-}
+  .gift-deets {
+    display: flex;
+    align-items: center;
+    border: 1px solid #f90;
+    background-color: peachpuff;
+    padding: 3%;
+    border-radius: 50px;
+  }
 
-.gift-deets {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ff9900;
-  background-color: peachpuff;
-  padding: 3%;
-  border-radius: 50px;
-}
+  .int-msg {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
 
+  .pay-deets {
+    text-align: center;
+  }
 
-.int-msg {
-  text-align: center;
-  width: 50%;
-  margin: auto;
-}
-
-.pay-deets {
-  text-align: center;
-}
-
-.paym {
-  min-width: 60%;
-  width: 70%;
-}
+  .paym {
+    min-width: 60%;
+    width: 70%;
+  }
 }

@@ -8,23 +8,23 @@ const gallery = [
   {
     id: 1,
     file: SK1,
-  }, 
+  },
   {
     id: 2,
-    file: SKbc
+    file: SKbc,
   },
   {
     id: 3,
-    file: SKbc1  
+    file: SKbc1,
   },
   {
     id: 4,
-    file: SKflnd
-  }, 
+    file: SKflnd,
+  },
   {
     id: 5,
-    file: SKfldn1
-  }, 
+    file: SKfldn1,
+  },
 ];
 
 export default gallery;
