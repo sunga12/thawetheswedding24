@@ -181,6 +181,11 @@ nav li {
   padding: 2rem 0;
 }
 
+.contact-comment {
+  width: 80%;
+  margin: auto;
+}
+
 .form-list {
   width: 60%;
   margin: auto;
@@ -201,7 +206,7 @@ nav li {
   border: 1px solid white;
 }  
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
 
 body {
   font-size: 1.1rem;
@@ -241,8 +246,9 @@ button:hover {
 .skbigday {
   display: unset;
   border-radius: 10%;
-  height: 80vh;
-  opacity: 60%;
+  opacity: 50%;
+  max-width: 50vw;
+  max-height: 80vh;
 }
 
 .bigday-deets {
