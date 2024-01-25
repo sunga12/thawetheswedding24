@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import airtel from '../assets/images/airtelmomo.png';
+import airteldeet from '../assets/images/airteldeet.png';
 import mtn from '../assets/images/momozmw.png';
+import mtndeet from '../assets/images/mtndeet.png';
 import fnb from '../assets/images/fnb.png';
+import fnbdeet from '../assets/images/fnbdeet.png';
 import remitly from '../assets/images/remitly.png';
 import world from '../assets/images/world.png';
 import taptap from '../assets/images/taptap.png';
@@ -22,6 +25,34 @@ const giftVariants = {
 };
 
 const Gifts = () => {
+
+  const [airtelImage, setAirtelImage] = useState(airtel);
+  const [mtnImage, setMtnImage] = useState(mtn);
+  const [fnbImage, setFnbImage] = useState(fnb);
+
+  const handleAirtel = () => {
+    if(airtelImage === airtel) {
+      setAirtelImage(airteldeet);
+    } else {
+      setAirtelImage(airtel);
+    }
+
+  };
+
+  const handleMtn = () => {
+    if(mtnImage === mtn) {
+      setMtnImage(mtndeet);
+    } else {
+      setMtnImage(mtn);
+    }  };
+
+  const handleFnb = () => {
+    if(fnbImage === fnb) {
+      setFnbImage(fnbdeet);
+    } else {
+      setFnbImage(fnb);
+    }  };
+
   return (
     <div id="gifts">
       <motion.h1 variants={giftVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="section-top">Gifts</motion.h1>
@@ -45,7 +76,7 @@ const Gifts = () => {
     <div className="gift-deets">
       <motion.div variants={giftVariants} initial="hidden" whileInView="visible" className="logos">
             <div className="pay-deets">
-              <img src={airtel} className="momo" alt="airtel money logo" />
+              <img src={airtelImage} className="momo" onClick={handleAirtel} alt="airtel money logo" />
               <p>
               <span className="network">Airtel Money:</span>
                 <br />
@@ -56,7 +87,7 @@ const Gifts = () => {
               </p>
             </div>
             <div className="pay-deets">
-            <img src={mtn} className="momo" alt="mtn money logo" />
+            <img src={mtnImage} className="momo" onClick={handleMtn} alt="mtn money logo" />
             <p>
               <span className="network">MTN Money:</span>
                 <br />
@@ -67,7 +98,7 @@ const Gifts = () => {
             </p>
             </div>
             <div className="pay-deets">
-            <img src={fnb} className="momo" alt="mtn money logo" />
+            <img src={fnbImage} className="momo" onClick={handleFnb} alt="mtn money logo" />
             <p>
             <span className="network">First National Bank:</span>
                 <br />
