@@ -68,7 +68,7 @@ const Gifts = () => {
         and start our lives together on an incredible adventure.
         <br />
         <br />
-        Ways to give:
+        Ways to give (Click/Hover for details):
         <br />
         <br />
 
