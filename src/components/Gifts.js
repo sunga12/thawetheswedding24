@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import {motion} from 'framer-motion';
 import airtel from '../assets/images/airtelmomo.png';
 import airteldeet from '../assets/images/airteldeet.png';
 import mtn from '../assets/images/momozmw.png';
@@ -36,7 +36,6 @@ const Gifts = () => {
     } else {
       setAirtelImage(airtel);
     }
-
   };
 
   const handleMtn = () => {
@@ -77,36 +76,12 @@ const Gifts = () => {
       <motion.div variants={giftVariants} initial="hidden" whileInView="visible" className="logos">
             <div className="pay-deets">
               <img src={airtelImage} className="momo" onClick={handleAirtel} onMouseOver={handleAirtel} alt="airtel money logo" />
-              <p>
-              <span className="network">Airtel Money:</span>
-                <br />
-                <br />
-                Name: Sungabanja Thawethe
-                <br />
-                Number: +260975147761
-              </p>
             </div>
             <div className="pay-deets">
             <img src={mtnImage} className="momo" onClick={handleMtn} onMouseOver={handleMtn} alt="mtn money logo" />
-            <p>
-              <span className="network">MTN Money:</span>
-                <br />
-                <br />
-                Name: Sungabanja Thawethe
-                <br />
-                Number: +260964311916
-            </p>
             </div>
             <div className="pay-deets">
             <img src={fnbImage} className="momo" onClick={handleFnb} onMouseOver={handleFnb} alt="mtn money logo" />
-            <p>
-            <span className="network">First National Bank:</span>
-                <br />
-                <br />
-                Name: Sungabanja Thawethe
-                <br />
-                Account: 627918104579
-              </p>
             </div>
       </motion.div>
       <div className="int-deets">
