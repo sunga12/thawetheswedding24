@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
-import skbigday from '../assets/images/SK/SKflnd.jpg'
+import skbigday from '../assets/images/SK/SKflnd1.jpg'
 
 const dayVariants = {
   hidden: {
