@@ -33,6 +33,7 @@ const Navigation = () => {
           <motion.li variants={navVariants} initial="hidden" animate="visible"><Link to="home" smooth duration={500}>Home</Link></motion.li>
           <motion.li variants={navVariants} initial="hidden" animate="visible"><Link to="bigday" smooth duration={500}>The Big Day</Link></motion.li>
           <motion.li variants={navVariants} initial="hidden" animate="visible"><Link to="gifts" smooth duration={500}>Gifts</Link></motion.li>
+          <motion.li variants={navVariants} initial="hidden" animate="visible"><Link to="contact" smooth duration={500}>RSVP</Link></motion.li>
         </ul>
       </div>)}
     </nav>
